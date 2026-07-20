@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.guild.ai/platform/triggers.md
+docs: https://docs.guild.ai/platform/trigger-api-keys.md
+summary:
+  types: [http, apiKey, oauth2]
+  http_schemes: [basic]
+  api_key_in: [header]
+  oauth2_flows: [authorizationCode]
+  note: >-
+    Guild has no public OpenAPI spec; this profile is searched from the docs. The
+    Guildcode REST API (base https://app.guild.ai/api) uses HTTP Basic Authentication;
+    programmatic trigger invocation uses per-trigger API keys; the CLI authenticates
+    via browser-based OAuth (`guild auth login`). Enterprise adds SSO, SCIM, and RBAC.
+schemes:
+  - name: guildcode-basic
+    type: http
+    scheme: basic
+    applies_to: Guildcode REST API (session create, events, tasks)
+    base_url: https://app.guild.ai/api
+    evidence: >-
+      "Guildcode uses HTTP Basic Authentication to authorize API requests. Pass the
+      combined credentials string as the authentication parameter (for example, with
+      `curl -u`)." — docs.guild.ai/platform/triggers.md
+    sources: [docs.guild.ai/platform/triggers.md]
+  - name: trigger-api-key
+    type: apiKey
+    in: header
+    applies_to: External systems invoking Guild triggers over HTTP
+    scope: Each key is scoped to a specific trigger.
+    docs: https://docs.guild.ai/platform/trigger-api-keys.md
+    sources: [docs.guild.ai/platform/trigger-api-keys.md]
+  - name: cli-oauth
+    type: oauth2
+    flow: authorizationCode
+    applies_to: Guild CLI (`guild auth login` opens the browser to sign in at app.guild.ai)
+    sources: [docs.guild.ai/cli/getting-started.md]
+enterprise:
+  sso: true
+  scim: true
+  rbac: true
+  source: https://guild.ai/solutions/enterprise

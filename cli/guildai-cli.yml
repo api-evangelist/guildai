@@ -1,0 +1,41 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.guild.ai/cli/commands.md
+name: Guild CLI
+binary: guild
+package: "@guildai/cli"
+install:
+  - method: npm
+    command: npm i @guildai/cli -g
+docs: https://docs.guild.ai/cli/getting-started.md
+description: >-
+  First-party command-line interface for building, testing, publishing, and running
+  Guild AI agents, plus an authenticated REST API escape hatch and an MCP server.
+command_groups:
+  - group: auth
+    description: Authenticate the CLI (browser OAuth) and inspect token state.
+    commands: [login, logout, status, token]
+  - group: agent
+    description: Full agent development lifecycle.
+    commands: [init, save, pull, test, chat, publish, unpublish, versions, list, search, get, create, update, clone, code]
+  - group: workspace
+    description: Manage workspaces, install agents, chat with the assistant, and manage context versions.
+    commands: [list, create, get, select, current, clear, chat, "agent add", "agent remove", "agent list", "context list", "context get", "context edit", "context publish"]
+  - group: skill
+    description: Create, version, and manage reusable skill packages.
+    commands: [create]
+  - group: api
+    description: Authenticated escape hatch that calls the Guild REST API directly and prints raw JSON.
+    examples:
+      - guild api GET /me
+      - guild api GET /workspaces
+      - guild api POST /workspaces --data '{"name":"demo"}'
+  - group: setup
+    description: Install Guild coding-assistant skills.
+  - group: doctor
+    description: Diagnose CLI setup issues.
+key_flows:
+  - name: Develop and publish an agent
+    steps: [guild agent init, guild agent test, guild agent save --wait, guild agent publish --wait]
+  - name: Run the MCP server for client agents
+    docs: https://docs.guild.ai/cli/mcp-server.md

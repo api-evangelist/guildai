@@ -1,7 +1,16 @@
 aid: guildai
 name: Guild.ai
-description: 'Guild.ai is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Guild.ai is a control plane for AI agents that lets engineering teams build, deploy,
+  govern, and share agents in production. Agents are authored in TypeScript with the
+  @guildai/agents-sdk (alongside Guild Native and Goose recipe agent types) and run in a
+  governed, sandboxed runtime that mediates all external tool access and enforces
+  least-privilege scoped credentials, with workspaces, versioning, audit logs, and
+  real-time usage and cost tracking. Guild is model-agnostic across OpenAI, Anthropic,
+  and Google, ships a first-party CLI that also runs an MCP server, exposes a Guildcode
+  REST API plus per-trigger API keys for programmatic invocation, offers 40+ integrations
+  (GitHub, Slack, Jira, Linear, Notion, Google Cloud, and more), and provides an Agent Hub
+  for discovering, forking, and publishing agents. Backed by GV, NFX, and Khosla Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/guildai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,13 +18,44 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://app.guild.ai/favicons/favicon.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai
-apis: []
+- AI Agents
+- Agent Control Plane
+- Agent Runtime
+- Developer Tools
+- MCP
+- LLM
+- Agent Governance
+- SDK
+- CLI
+apis:
+- name: Guild REST API
+  description: >-
+    The Guildcode REST API for creating workspace-scoped agent sessions, posting events,
+    and reading session events and tasks. HTTP Basic authentication; no public OpenAPI spec.
+  humanURL: https://docs.guild.ai/platform/triggers
+  baseURL: https://app.guild.ai/api
+  properties:
+  - type: Documentation
+    url: https://docs.guild.ai/platform/triggers
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,3 +64,44 @@ maintainers:
 common:
 - type: Website
   url: https://www.guild.ai
+- type: DeveloperPortal
+  url: https://docs.guild.ai
+- type: Documentation
+  url: https://docs.guild.ai
+- type: APIReference
+  url: https://docs.guild.ai/platform/triggers
+- type: GettingStarted
+  url: https://docs.guild.ai/quickstart
+- type: Blog
+  url: https://guild.ai/blog
+- type: Support
+  url: https://guild.ai/community
+- type: Pricing
+  url: https://guild.ai/pricing
+- type: SignUp
+  url: https://app.guild.ai/
+- type: TermsOfService
+  url: https://guild.ai/terms
+- type: PrivacyPolicy
+  url: https://guild.ai/privacy-policy
+- type: LLMsTxt
+  url: llms/guildai-llms.txt
+- type: Packages
+  url: packages/guildai-packages.yml
+- type: SDKs
+  url: packages/guildai-packages.yml
+- type: CLI
+  url: cli/guildai-cli.yml
+- type: MCPServer
+  url: mcp/guildai-mcp.yml
+- type: Authentication
+  url: authentication/guildai-authentication.yml
+- type: Conventions
+  url: conventions/guildai-conventions.yml
+- type: DomainSecurity
+  url: security/guildai-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

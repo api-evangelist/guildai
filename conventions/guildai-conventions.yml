@@ -1,0 +1,35 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.guild.ai/platform/triggers.md
+note: >-
+  Cross-cutting semantics for the Guildcode REST API, searched from the docs. Guild
+  publishes no OpenAPI spec, so these are the conventions documented in prose/examples.
+api:
+  base_url: https://app.guild.ai/api
+  style: REST/JSON
+  resource_model: >-
+    Workspace-scoped sessions. Create a session against a workspace, then post events
+    to the session and read its events/tasks. Real-time interfaces use WebSocket.
+  representative_endpoints:
+    - POST /api/workspaces/{owner_name}/{workspace_name}/sessions
+    - POST /api/sessions/{session_id}/events
+    - GET /api/sessions/{session_id}
+    - GET /api/sessions/{session_id}/events
+    - GET /api/sessions/{session_id}/tasks
+authentication:
+  style: HTTP Basic (Guildcode); per-trigger API keys for trigger invocation; CLI browser OAuth.
+  ref: authentication/guildai-authentication.yml
+pagination:
+  style: limit query parameter
+  params: [limit]
+  example: GET /api/sessions/{session_id}/events?limit=100
+  source: docs.guild.ai/platform/triggers.md
+streaming:
+  websocket: true
+  note: >-
+    "If you are developing a real-time interface or monitoring tool, establish a
+    WebSocket connection rather than polling. Pass your Basic Auth credentials in the
+    connection headers." — docs.guild.ai/platform/triggers.md
+idempotency:
+  documented: false
+  note: No idempotency-key contract is documented; not asserting Idempotency support.

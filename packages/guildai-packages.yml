@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.guild.ai/llms.txt
+packages:
+  - language: javascript
+    registry: npm
+    name: "@guildai/cli"
+    url: https://www.npmjs.com/package/@guildai/cli
+    install: npm i @guildai/cli -g
+    version: 0.16.0
+    description: Guild.ai CLI - build, test, and deploy AI agents; ships the guild binary and an MCP server.
+    official: true
+  - language: typescript
+    registry: none
+    name: "@guildai/agents-sdk"
+    url: https://docs.guild.ai/packages/agents-sdk.md
+    description: Core SDK package for building Guild agents (types and utilities). Runtime-bundled; installed via the authenticated Guild npm registry after `guild auth login`, not published to public npm.
+    official: true
+  - language: javascript
+    registry: none
+    name: babel-plugin-agent-compiler
+    url: https://docs.guild.ai/packages/babel-plugin.md
+    description: Babel plugin that compiles procedural TypeScript agents into resumable state machines.
+    official: true

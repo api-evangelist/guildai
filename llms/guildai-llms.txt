@@ -1,0 +1,86 @@
+# Guild
+
+## Docs
+
+- [Commands](https://docs.guild.ai/cli/commands.md): Reference for all Guild CLI commands.
+- [CLI reference](https://docs.guild.ai/cli/getting-started.md): Install the Guild CLI and learn the agent development workflow.
+- [Guild CLI](https://docs.guild.ai/cli/introduction.md): Install and set up the Guild command-line interface.
+- [MCP server](https://docs.guild.ai/cli/mcp-server.md): How the Guild CLI MCP server tools return their results, so client agents can parse them reliably.
+- [Skills](https://docs.guild.ai/cli/skills.md): Create, version, and manage reusable skill packages with the Guild CLI.
+- [Getting started with The Smith](https://docs.guild.ai/docs/the-smith/getting-started.md): Learn how the /onboarding tour introduces new users to Guild and launches your first session with The Smith.
+- [Agent types](https://docs.guild.ai/guide/agent-types.md): Overview of the three agent execution architectures supported by Guild: TypeScript, Guild Native, and Goose.
+- [Auto-managed state agents](https://docs.guild.ai/guide/coded-agents.md): Build deterministic TypeScript agents with automatic state management.
+- [Goose agents](https://docs.guild.ai/guide/goose-agents.md): Build agents from Goose recipe files using the YAML recipe format.
+- [LLM agents](https://docs.guild.ai/guide/llm-agents.md): Build prompt-driven agents that use an LLM to accomplish tasks.
+- [LLMs](https://docs.guild.ai/guide/llms.md): Make language model calls from inside your agent.
+- [Agent SDK](https://docs.guild.ai/guide/sdk-introduction.md): Overview of the Guild Agent SDK and how to choose an agent type.
+- [Self-managed state agents](https://docs.guild.ai/guide/self-managed-agents.md): Build event-driven agents with explicit state persistence and parallel tool calls.
+- [State](https://docs.guild.ai/guide/state.md): How Guild agents manage state across tool calls and session resumption.
+- [Tasks](https://docs.guild.ai/guide/tasks.md): The runtime context available to every agent — tools, LLMs, environments, and more.
+- [Versions](https://docs.guild.ai/guide/versions.md): Manage agent versions as you develop, test, and publish.
+- [Introduction](https://docs.guild.ai/index.md): The control plane for AI agents.
+- [Audit logs](https://docs.guild.ai/insights/audit-logs.md): Review a tamper-evident record of administrative actions across your account.
+- [Insights & Usage](https://docs.guild.ai/insights/usage.md): Track organization LLM usage, token consumption, and spend in real-time.
+- [Asana](https://docs.guild.ai/integrations/asana.md): Give agents access to Asana projects, tasks, and workspaces.
+- [Attio](https://docs.guild.ai/integrations/attio.md): Give agents access to CRM records, contacts, and deals in Attio.
+- [AWS CloudWatch](https://docs.guild.ai/integrations/aws-cloudwatch.md): Give agents access to AWS CloudWatch logs, metrics, and alarms.
+- [Azure DevOps](https://docs.guild.ai/integrations/azure-devops.md): Give agents authenticated access to the Azure DevOps REST API.
+- [BigQuery](https://docs.guild.ai/integrations/bigquery.md): Give agents access to Google BigQuery datasets and tables.
+- [Bitbucket](https://docs.guild.ai/integrations/bitbucket.md): Give agents authenticated access to the Bitbucket Cloud REST API.
+- [Confluence](https://docs.guild.ai/integrations/confluence.md): Give agents authenticated access to the Confluence Cloud REST API.
+- [Cypress](https://docs.guild.ai/integrations/cypress.md): Give agents access to Cypress Cloud test reporting data.
+- [Discord](https://docs.guild.ai/integrations/discord.md): Trigger Guild agents from Discord slash commands and message interactions.
+- [GitHub](https://docs.guild.ai/integrations/github.md): Give agents authenticated access to the GitHub REST API.
+- [Gmail](https://docs.guild.ai/integrations/gmail.md): Give agents access to the Gmail API.
+- [Google Calendar](https://docs.guild.ai/integrations/google-calendar.md): Give agents access to Google Calendar events and schedules.
+- [Google Compute](https://docs.guild.ai/integrations/google-compute.md): Give agents access to Google Cloud compute resources.
+- [Google Docs](https://docs.guild.ai/integrations/google-docs.md): Give agents access to Google Docs documents.
+- [Google Drive](https://docs.guild.ai/integrations/google-drive.md): Give agents access to files and folders in Google Drive.
+- [Google Logging](https://docs.guild.ai/integrations/google-logging.md): Give agents access to Google Cloud Logging.
+- [Google Sheets](https://docs.guild.ai/integrations/google-sheets.md): Give agents access to Google Sheets spreadsheets.
+- [Google Slides](https://docs.guild.ai/integrations/google-slides.md): Give agents access to Google Slides presentations.
+- [Linear](https://docs.guild.ai/integrations/linear.md): Give agents access to Linear issues, projects, and cycles.
+- [New Relic](https://docs.guild.ai/integrations/newrelic.md): Give agents access to New Relic observability data.
+- [Nexla](https://docs.guild.ai/integrations/nexla.md): Give agents access to Nexla's data integration platform.
+- [Notion](https://docs.guild.ai/integrations/notion.md): Give agents access to Notion pages, databases, and blocks.
+- [Overview](https://docs.guild.ai/integrations/overview.md): Connect Guild agents to the tools your team already uses.
+- [Pipedream (Notion & Google Docs)](https://docs.guild.ai/integrations/pipedream.md): Give agents access to Notion and Google Docs through Pipedream Connect.
+- [SendGrid](https://docs.guild.ai/integrations/sendgrid.md): Give agents access to the Twilio SendGrid email API.
+- [Slack](https://docs.guild.ai/integrations/slack.md): Connect Guild agents to your Slack workspace to respond to messages, post updates, and run automated tasks.
+- [Splunk](https://docs.guild.ai/integrations/splunk.md): Give agents access to Splunk for searching and analyzing machine-generated data.
+- [TestRail](https://docs.guild.ai/integrations/testrail.md): Give agents access to TestRail test management data.
+- [Turbopuffer](https://docs.guild.ai/integrations/turbopuffer.md): Give agents access to Turbopuffer's serverless vector and full-text search.
+- [Twilio](https://docs.guild.ai/integrations/twilio.md): Give agents access to the Twilio voice and messaging API.
+- [Zendesk](https://docs.guild.ai/integrations/zendesk.md): Give agents access to Zendesk support tickets and customer data.
+- [@guildai/agents-sdk](https://docs.guild.ai/packages/agents-sdk.md): The core SDK package for building Guild agents.
+- [babel-plugin-agent-compiler](https://docs.guild.ai/packages/babel-plugin.md): Babel plugin that compiles procedural TypeScript agents into resumable state machines.
+- [Account settings](https://docs.guild.ai/platform/account-settings.md): Manage your personal Guild account, including requesting account deletion.
+- [Agents](https://docs.guild.ai/platform/agents.md): Install pre-built agents or build your own with the Agent SDK.
+- [Context](https://docs.guild.ai/platform/context.md): Give agents background knowledge about your workspace.
+- [Credentials](https://docs.guild.ai/platform/credentials.md): Connect third-party services so agents can authenticate automatically.
+- [Database](https://docs.guild.ai/platform/database.md): Configure the PostgreSQL database connection for self-hosted Guild deployments.
+- [Goose recipes](https://docs.guild.ai/platform/goose-recipes.md): Run a Goose recipe as a Guild agent without writing SDK code.
+- [Integrations](https://docs.guild.ai/platform/integrations.md): Connect external services to your Guild organization.
+- [LLM settings](https://docs.guild.ai/platform/llm-settings.md): Configure how Guild runs LLM calls for your account — managed Guild tokens or your own provider API keys.
+- [Message formatting](https://docs.guild.ai/platform/message-formatting.md): How the session interface renders markdown, math, diagrams, and code in agent responses.
+- [Organizations](https://docs.guild.ai/platform/organizations.md): Manage teams, billing, and credentials at the organization level.
+- [Profile settings](https://docs.guild.ai/platform/profile-settings.md): Update your display name, avatar, banner, bio, and social links from Profile settings.
+- [Agent Hub](https://docs.guild.ai/platform/publish-to-agent-hub.md): Publish validated agent versions so others can install them.
+- [Sessions](https://docs.guild.ai/platform/sessions.md): Start conversations with agents and interact with them in real time.
+- [Settings](https://docs.guild.ai/platform/settings.md): Configure your profile identity and appearance preferences.
+- [Skills](https://docs.guild.ai/platform/skills.md): Give agents reusable domain knowledge that activates when relevant.
+- [What is The Smith?](https://docs.guild.ai/platform/smith.md): Guild's built-in support agent and chat landing experience.
+- [Trigger API keys](https://docs.guild.ai/platform/trigger-api-keys.md): Create and manage API keys that authenticate programmatic requests to Guild triggers.
+- [Triggers](https://docs.guild.ai/platform/triggers.md): Automate agent execution with events, schedules, or API calls.
+- [Usage](https://docs.guild.ai/platform/usage.md): Track LLM token consumption and spend across your account.
+- [Workspaces](https://docs.guild.ai/platform/workspaces.md): Shared environments for installing and running agents.
+- [Quickstart](https://docs.guild.ai/quickstart.md): Build and publish your first agent in five minutes.
+- [Environment variables](https://docs.guild.ai/reference/environment-variables.md): Configure Guild agent runtime behavior with environment variables.
+- [Runtime knobs](https://docs.guild.ai/reference/knobs.md): Configure Guild runtime behavior dynamically with runtime knobs.
+- [Execution limits](https://docs.guild.ai/reference/limits.md): Platform guardrails that cap task state size, LLM request size, LLM call count, token usage, and synchronous steps per execution — and how to diagnose and configure them.
+- [LLM Pricing & Cost Calculation](https://docs.guild.ai/reference/pricing.md): Reference guide on default LLM pricing list rates and cost calculations on the Guild platform.
+- [Agent self-identification](https://docs.guild.ai/sdk/get-self.md): Retrieve the calling agent's own identity before posting to external systems.
+- [MCP integrations](https://docs.guild.ai/sdk/mcp-integrations.md): How to install and use MCP (Model Context Protocol) integrations with the Guild Agents SDK, including package naming and export conventions.
+- [Task object](https://docs.guild.ai/sdk/task-object.md): Access Guild platform services, user interaction, and LLMs from your agent.
+- [Tool sets](https://docs.guild.ai/sdk/tools.md): Pre-built tool sets for building Guild agents.
+- [Create an Integration](https://docs.guild.ai/services/create-an-integration.md): Build custom integrations that connect Guild agents to any service.

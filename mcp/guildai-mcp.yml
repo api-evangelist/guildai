@@ -5,37 +5,40 @@ source: https://docs.guild.ai/cli/mcp-server.md
 server:
   name: guild
   transport: stdio
-  provided_by: "@guildai/cli"
+  provided_by: '@guildai/cli'
   docs: https://docs.guild.ai/cli/mcp-server.md
-  description: >-
-    The Guild CLI ships an MCP server that exposes Guild control-plane operations as
-    tools for MCP clients, so client agents can list and inspect workspaces, agents,
-    sessions, triggers, credentials, and integrations, and drive chat/session actions.
+  description: The Guild CLI ships an MCP server that exposes Guild control-plane operations as tools
+    for MCP clients, so client agents can list and inspect workspaces, agents, sessions, triggers, credentials,
+    and integrations, and drive chat/session actions.
 tools:
-  # Data-returning tools (structured JSON)
-  - name: guild_whoami
-  - name: guild_list_workspaces
-  - name: guild_list_contexts
-  - name: guild_search_agents
-  - name: guild_list_agent_versions
-  - name: guild_list_sessions
-  - name: guild_list_triggers
-  - name: guild_get_trigger_sessions
-  - name: guild_list_credentials
-  - name: guild_list_integrations
-  - name: guild_get_integration_operations
-  - name: guild_get_workspace
-  - name: guild_get_context
-  - name: guild_get_agent
-  - name: guild_get_integration
-  - name: guild_get_session
-  - name: guild_get_session_events
-  # Action-taking tools (narrative text)
-  - name: guild_chat
-  - name: guild_send_message
-  - name: guild_interrupt_session
-  - name: guild_add_workspace_agent
-  - name: guild_remove_workspace_agent
-  - name: guild_publish_context
-  - name: guild_get_agent_readme
-  - name: guild_get_agent_code
+- name: guild_whoami
+- name: guild_list_workspaces
+- name: guild_list_contexts
+- name: guild_search_agents
+- name: guild_list_agent_versions
+- name: guild_list_sessions
+- name: guild_list_triggers
+- name: guild_get_trigger_sessions
+- name: guild_list_credentials
+- name: guild_list_integrations
+- name: guild_get_integration_operations
+- name: guild_get_workspace
+- name: guild_get_context
+- name: guild_get_agent
+- name: guild_get_integration
+- name: guild_get_session
+- name: guild_get_session_events
+- name: guild_chat
+- name: guild_send_message
+- name: guild_interrupt_session
+- name: guild_add_workspace_agent
+- name: guild_remove_workspace_agent
+- name: guild_publish_context
+- name: guild_get_agent_readme
+- name: guild_get_agent_code
+deployment:
+  mode: local-stdio
+  verified: searched
+  tools: 25
+  checked: '2026-08-12'
+  source: catalog MCP census

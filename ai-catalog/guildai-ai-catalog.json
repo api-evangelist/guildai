@@ -1,0 +1,44 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:guild.ai:api:openapi-spec",
+      "displayName": "Guild Public API (OpenAPI spec)",
+      "type": "application/vnd.oai.openapi+json",
+      "url": "https://docs.guild.ai/openapi.json",
+      "description": "Machine-readable OpenAPI 3.0 spec for the Guild public API: accounts, agents, sessions, skills, and workspaces. Authenticated with an account API key (HTTP Basic). See https://docs.guild.ai/api-reference/introduction for scopes and conventions.",
+      "capabilities": [
+        "agents",
+        "sessions",
+        "workspaces",
+        "skills",
+        "integrations"
+      ],
+      "representativeQueries": [
+        "How do I start a chat with a Guild agent through the API?",
+        "What scope does creating a Guild workspace require?",
+        "How do I list an account's agents programmatically?"
+      ],
+      "tags": [
+        "api",
+        "openapi",
+        "rest"
+      ]
+    },
+    {
+      "identifier": "urn:air:guild.ai:docs:llms-index",
+      "displayName": "Guild documentation index (llms.txt)",
+      "type": "text/markdown",
+      "url": "https://docs.guild.ai/llms.txt",
+      "description": "Full index of Guild's documentation in llms.txt format: guides, platform reference, CLI reference, SDK docs, and integrations, beyond just the public API.",
+      "representativeQueries": [
+        "What is Guild and who is it for?",
+        "How do I install the Guild CLI and build my first agent?",
+        "What agent types does Guild support?"
+      ],
+      "tags": [
+        "documentation",
+        "llms.txt"
+      ]
+    }
+  ]
+}

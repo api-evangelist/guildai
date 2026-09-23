@@ -1,0 +1,29 @@
+# Front Door AI Index — guildai — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: guildai
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.guild.ai
+  final_host: www.guild.ai
+  ownership: own
+  owner: guildai
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 20
+  host_score: 20
+  density: 28.45
+  words: 703
+  tiers:
+    agentic: 3
+    core: 13
+    model: 4
+  ambiguous: 31
+  top_terms:
+    agent: 31
+    AI: 13
+    AI agent: 3
+    Anthropic: 2
+    OpenAI: 2
